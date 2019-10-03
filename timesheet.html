@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TIMESHEET</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Load your own css files here -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="typography.css" />
+  </head>
+  
+  <body>
+    <div id="viewport">
+
+     
+      <div class="container">
+
+        <div class="row">
+            <div class = "col-12">
+                <div class="jumbotron jumbotron-fluid" >
+                    <div class="container">
+                     <h1 class="display-4" >Employee Data Management</h1>
+                     <p class="lead">A comprehensive Directory of Employee Billable Hours </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col-12">
+                <div> Current Employee</div>
+                <table class="table table-striped"\ >
+                    <thead>
+                      <tr >
+                        <th scope="col">Employee Name</th>
+                        <th scope="col">Rate</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">Months Worked</th>
+                        <th scope="col">Monthly Rate ($)</th>
+                        <th scope="col">Total Billed ($)</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">15</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td></td>
+                        <td></td>
+
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td></td>
+                        <td></td>
+
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td></td>
+                        <td></td>
+
+                      </tr>
+                    </tbody>
+                 </table>
+            </div>
+        </div>
+    
+    
+    </div>
+          <div class="col-12 col-sm-8 col-md-6">
+            <p>Content for this column goes here. Inside the div.</p>
+          </div>
+
+          <div class="col-12 col-sm-4 col-md-6">
+            <p>Content for this column goes here. Inside the div.</p>
+          </div>
+
+        </div> <!-- This closes the row -->
+
+      </div> <!-- This closes the container -->
+    </div> <!-- This closes the viewport -->
+
+    <!-- Javascript files needed by Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- If you're running any Javascript in the page, it can go here -->
+    <script type="text/javascript">
+      // Wait until all HTML loads before any jQuery work starts
+      $(document).ready(function(){
+        // Select something and assign a variable to it
+        var viewport = $("#viewport");
+
+        // Add a class to it
+        viewport.attr("class", "fancy");
+
+        // Here's an easier way to add a class
+        viewport.addClass('fancier');
+
+        // Here are the common jQuery cookie methods
+        // Read a cookie
+        // var item = $.cookie("example");
+
+        // Set a cookie
+        // $.cookie("example", "foo");
+
+        // Set a session cookie
+        // $.cookie("example", "foo", { expires: 7 });
+      });
+    </script>
+
+  </body>
+</html>
